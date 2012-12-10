@@ -6,13 +6,12 @@
 
 Summary:	Gksu addon for caja
 Name:		mate-file-manager-gksu
-Version:	1.2.0
+Version:	1.4.0
 Release:	1
 Group:		File tools
 License:	GPLv2+
 URL:		http://mate-desktop.org
-Source0:	http://pub.mate-desktop.org/releases/1.2/%{name}-%{version}.tar.xz
-Patch0:		mate-file-manager-gksu-1.2.0_glib.patch
+Source0:	http://pub.mate-desktop.org/releases/1.4/%{name}-%{version}.tar.xz
 
 BuildRequires:	intltool
 BuildRequires:	mate-common
@@ -69,3 +68,10 @@ NOCONFIGURE=yes ./autogen.sh
 
 %files -f %{name}.lang
 %{_libdir}/caja/extensions-2.0/libcaja-gksu.so
+
+
+%changelog
+* Thu Jun 07 2012 Matthew Dawkins <mattydaw@mandriva.org> 1.2.0-1
++ Revision: 803028
+- imported package mate-file-manager-gksu
+

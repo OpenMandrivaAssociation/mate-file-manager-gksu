@@ -51,7 +51,7 @@ files to allow you to develop mate-file-manager components.
 
 %prep
 %setup -q
-%apply_patches
+%autopatch -p1
 
 %build
 NOCONFIGURE=yes ./autogen.sh
